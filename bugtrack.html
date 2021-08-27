@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content=" ">
+    <meta name="keywords" content="HTML, CSS, Bug, Issue, Tracker">
+    <meta name="author" content="Kristoff L.">
+    <meta name="viewpoint" content="width=devicewidth", initial-scale="1.0">
+
+    <title> Bug Tracker </title>
+    <link rel="stylesheet" href="bugstyle.css">
+</head>
+
+<body>
+
+<!--  MODAL -- Add Issues using Modal popup. --> 
+    <div class="modal" id="issue_form">
+        <div class="header">
+            <div class="title"> Test Modal  </div>
+            <button class="btn close-modal" > &times; </button>
+        </div>
+
+            <div class="body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                quis malesuada quam, at auctor ex. Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. 
+            <!-- 
+               <input type="text" id="todo_input">
+               <input type="submit" value="Add Todo" id="todo_submit" />
+            -->
+            </div>
+    </div>
+   
+    
+   <!-- ISSUES CONTAINER -->
+    <div id="container"> 
+        <div class="status">
+            <h1> NO STATUS</h1>
+           
+                <!--Add Issues Button-- modal added -->
+                <button id="addBtn" data-target-modal="#issue_form"> + ADD ISSUES</button>
+
+            <div class="card" draggable="true">
+                <!--<div class="title"> 08/17/2021 - Tracking page. </div> -->
+                <div class="description">
+                Javascript: get  "ADD ISSUES" button & modal working.
+                </div> 
+            <span class="close">&times;</span>
+            </div>        
+        </div>
+        
+
+        <!--NOT STARTED CONTAINER-->
+        <div class="status" >
+            <h1> Not Started </h1>  
+            
+            
+        </div>
+
+        <!--IN PROGRESS CONTAINER-->
+        <div class="status">
+            <h1> In Progress </h1>
+        </div>
+
+        <!--COMPLETED CONTAINER-->
+        <div class="status">
+            <h1> Completed </h1>
+        </div>
+   
+    </div>
+
+
+
+<!--    NOTEPAD SECTION --- Not used at the moment -- 
+    <div id="notes">
+        <div class="notepad">
+            <h2> NOTEPAD </h2>
+            <button id="addNotesBtn"> + Add Notes</button>
+
+
+            <div class="notebook">
+
+            </div>
+        </div>
+    </div>
+
+
+<div id="overlay"></div>
+-->
+
+</body>
+
+
+<script src="app.js"> </script>
+
+
+</html>
+
+
+
+<!--/* ** CODE SPRINT PROJECT -- BUG TRACKER  ** 
+ KRISTOFF L.  © Kristoff L. All Rights Reserved.-->

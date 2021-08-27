@@ -1,0 +1,217 @@
+/* --- STYLESHEET --- */
+
+body,
+html 
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+h1 
+{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#container 
+{
+  width: 100%;
+  height: 80%;
+  background-color: aliceblue;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.status 
+{
+  width: 23%;
+  border-radius: 20px;
+  background-color: burlywood;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* CARDS styling - issue blocks  */ 
+.card 
+{
+  background-color: moccasin;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px rgb(113, 113, 113);
+}
+
+.card.dragging 
+{
+  opacity: 0.4;
+}
+
+.card .title 
+{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+#notes
+{
+    float: left;
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: bisque;
+    
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+}
+
+.notepad
+{
+    width: 100%;
+    border-radius: 20px;
+    background-color: rosybrown;
+}
+
+
+.notebook
+{
+    background-color: aliceblue;
+}
+
+
+/* BUTTON styling */ 
+#addBtn
+{
+    width: 100%;
+    margin: 8px 0;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: lightsalmon;  
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#addBtn:hover
+{
+    background-color: coral;
+}
+
+
+.btn:active
+{
+    transform: scale(0.8);
+}
+
+
+/* MODAL styling - popup for issues */ 
+.modal-btn
+{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.modal
+{
+    width: 400px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid wheat;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 10px;
+    /*transition: top 0.3% ease-in-out; */
+}
+
+.modal.active
+{
+    top: 15%;
+}
+
+.modal .header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: rgb(247, 241, 166);
+    text-align: center;
+    /*text-transform: uppercase;    */
+
+}
+
+/* MODAL TITLE - HEADER & SPACER.
+.modal .issue-head
+{
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-align: center;
+}
+*/
+
+.modal .body
+{
+    padding: 12px;
+}
+
+.closeModal
+{
+    background: none;
+    border: none;
+    font-size: 12px;
+}
+
+#overlay
+{
+    opacity: 0.5;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+    
+}
+
+#overlay.active
+{
+    display: block;
+}
+
+#issue-input, #isuue-submit
+{
+    padding: 12px;
+    width: 100%;
+    margin: 14px;
+}
+
+#issue-submit
+{
+    background-color: paleturquoise;
+    color: rgb(95, 111, 141);
+    font-size: 22px;
+    border: none;
+}
+
+#issue_submit {
+background-color: #4caf50;
+color: #f3f3f3;
+font-size: 1.25rem;
+border: none;
+}

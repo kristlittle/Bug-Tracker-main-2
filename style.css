@@ -1,0 +1,218 @@
+/* --- STYLESHEET --- */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#container
+{
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;    
+    background-color: aliceblue;
+    justify-content: space-between;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+.status
+{
+    width: 30%;
+    position: relative;
+    border-radius: 20px;
+    background-color: moccasin;
+}
+*/
+
+.card
+{
+    background-color: beige;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 4px;
+    
+}
+
+.card .dragging
+{
+    opacity: 2;
+    border: solid lightskyblue;
+}
+
+.card .title
+{
+    font-weight: bold;
+}
+
+.hover
+{
+    background: darkblue;
+    border-style: dashed;
+}
+
+#notes
+{
+    float: left;
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: bisque;
+    
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+}
+
+.notepad
+{
+    width: 100%;
+    border-radius: 20px;
+    background-color: rosybrown;
+}
+
+
+.notebook
+{
+    background-color: aliceblue;
+}
+
+h1, h2
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+#addBtn
+{
+    width: 100%;
+    margin: 8px 0;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: lightsalmon;  
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#addBtn:hover
+{
+    background-color: coral;
+}
+
+.todo
+{
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 5px rgba(0, 0, 255, .2) ;
+    font-size: 24px;
+    padding: 8px 16px;
+    position: relative;
+    font-size: 24px;
+}
+
+
+/* button and description */
+.btn 
+{
+    padding: 8px;
+    border: 2px solid wheat;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:active
+{
+    transform: scale(0.8);
+}
+
+.modal-btn
+{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+
+}
+
+.modal
+{
+    width: 400px;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid wheat;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 10px;
+}
+
+.modal.active
+{
+    top: 15%;
+}
+
+.modal .header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: burlywood;
+
+}
+
+.modal .body
+{
+    padding: 12px;
+}
+
+#overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+#overlay.active
+{
+    display: block;
+}
+
+#todo-input, #todo-submit
+{
+    padding: 12px;
+    width: 100%;
+    margin: 14px;
+}
+
+#issue-submit
+{
+    background-color: paleturquoise;
+    color: cornflowerblue;
+    font-size: 22px;
+    border: none;
+}
+
+#todo_submit {
+background-color: #4caf50;
+color: #f3f3f3;
+font-size: 1.25rem;
+border: none;
+}
+
+<!--/* ** CODE SPRINT PROJECT -- BUG TRACKER  ** 
+ KRISTOFF L.  © Kristoff L. All Rights Reserved.-->
